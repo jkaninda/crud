@@ -6,7 +6,7 @@
 
 #### Android Studio/Gradle
 
- - Maven Central/jCenter, add dependency to your `build.gradle`:
+ - Maven:
  
  ```groovy
 	<repositories>
