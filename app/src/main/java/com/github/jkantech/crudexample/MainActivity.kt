@@ -10,6 +10,10 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
+import com.github.jkantech.crud.Crud
+import com.github.jkantech.crud.OnResponseListener
+import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)

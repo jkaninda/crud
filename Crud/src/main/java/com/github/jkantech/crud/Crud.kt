@@ -10,8 +10,8 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.util.*
 
-class Crud (ctx: Context?,private val url: String) {
-    private val queue: RequestQueue = Volley.newRequestQueue(ctx)
+class Crud (context: Context?,private val url: String) {
+    private val queue: RequestQueue = Volley.newRequestQueue(context)
     private val params: HashMap<String, String> = HashMap()
 
 
@@ -59,6 +59,17 @@ class Crud (ctx: Context?,private val url: String) {
     operator fun get(url: String, listener: OnResponseListener?) {
         request(url, params, listener)
     }
+
+
+
+    /*--------------------------------------------DEL----------------------------------------------*/
+
+    fun del(table: String, conds: JSONObject?, listener: OnResponseListener) {
+        params["table"] = table
+        params["conds"] = conds?.toString() ?: JSONObject().toString()
+        request("$url/del.php", params, listener)
+    }
+
 
     /*--------------------------------------------SET----------------------------------------------*/
     operator fun set(table: String, vals: JSONObject, conds: JSONObject, listener: OnResponseListener?) {

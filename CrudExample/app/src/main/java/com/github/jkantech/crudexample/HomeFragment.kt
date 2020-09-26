@@ -42,6 +42,7 @@ class HomeFragment : Fragment(),View.OnClickListener {
         // Inflate the layout for this fragment
         val root= inflater.inflate(R.layout.fragment_home, container, false)
         //init crud with (context,url)
+        
         crud= Crud(requireContext(),url)
         user_recyclerView=root.findViewById(R.id.user_recyclerView)
         nb_users=root.findViewById(R.id.nb_users)
