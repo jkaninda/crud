@@ -38,7 +38,7 @@
     }
 	
     dependencies {
-	        implementation 'com.github.jkanTech:Crud:1.0.1'
+	        implementation 'com.github.jkanTech:Crud:1.0.2'
           }
  ```
  
