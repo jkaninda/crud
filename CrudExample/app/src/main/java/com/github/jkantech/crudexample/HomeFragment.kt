@@ -63,6 +63,7 @@ class HomeFragment : Fragment(),View.OnClickListener {
     }
     //Get Users from database
     private fun getUsers(){
+        val crud=Crud(requireContext(),"http://192.168.8.101/api/query/v1/")
 
         //Get Users with where condition
         /*
