@@ -4,6 +4,7 @@ import android.content.Context
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
+import com.android.volley.VolleyLog.TAG
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONArray
@@ -61,7 +62,6 @@ class Crud (context: Context?,private val url: String) {
     }
 
 
-
     /*--------------------------------------------DEL----------------------------------------------*/
 
     fun del(table: String, conds: JSONObject?, listener: OnResponseListener) {
@@ -89,6 +89,16 @@ class Crud (context: Context?,private val url: String) {
         this.params["table"] = table
         this.params["params"] = params.toString()
         request("$url/put_bulk", this.params, listener)
+    }
+
+    /*--------------------------------------------CANCEL----------------------------------------------*/
+
+    fun cancel(){
+        queue.cancelAll(TAG)
+    }
+
+    fun stop(){
+        queue.stop()
     }
 
     inner class HttpRequest(method: Int, URL: String?, private val params: Map<String, String>, listener: Response.Listener<String?>?, error: Response.ErrorListener?) : StringRequest(method, URL, listener, error) {

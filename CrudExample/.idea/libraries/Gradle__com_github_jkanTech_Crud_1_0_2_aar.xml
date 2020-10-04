@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.jkanTech:Crud:1.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e374cc4c44b0c44489060086890c729d/jetified-Crud-1.0.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e374cc4c44b0c44489060086890c729d/jetified-Crud-1.0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e374cc4c44b0c44489060086890c729d/jetified-Crud-1.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e1a59ebed4bc3a194b5f21449a81807/jetified-Crud-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e1a59ebed4bc3a194b5f21449a81807/jetified-Crud-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e1a59ebed4bc3a194b5f21449a81807/jetified-Crud-1.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
